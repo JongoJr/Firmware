@@ -325,7 +325,7 @@ format:
 .PHONY: tests tests_coverage tests_mission tests_mission_coverage tests_offboard rostest python_coverage
 
 tests:
-	@$(MAKE) --no-print-directory px4_sitl_default test_results \
+	@$(MAKE) --no-print-directory px4_sitl_test test_results \
 	ASAN_OPTIONS="color=always:check_initialization_order=1:detect_stack_use_after_return=1" \
 	UBSAN_OPTIONS="color=always"
 
